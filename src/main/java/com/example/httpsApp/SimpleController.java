@@ -11,6 +11,11 @@ import java.util.List;
 
 @RestController
 public class SimpleController {
+    @GetMapping("/")
+    public String getHome() {
+        return "hello you made it but you're still an idiot";
+    }
+
     @GetMapping("/sellerList")
     public String getSellersList() {
         return "hello you made it but you're still an idiot";
